@@ -1,8 +1,7 @@
 import { proxy, useSnapshot } from "valtio";
-import { useEffect } from "react";
 
-let stateProxy;
-let channel;
+let stateProxy: any;
+let channel: any;
 
 export function useLiveState(socket: any, topic: string, initialState: Object) {
   if (!stateProxy) {
